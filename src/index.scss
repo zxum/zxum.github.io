@@ -1,0 +1,108 @@
+$teal: #73E0DA; // teal 
+$mint-green: #D3FDFA; // mint-green
+$light-grey: #EEEEEE; // light grey
+$grey: #A1A1A1; // grey
+$medium-grey: #333742; // medium grey
+$medium-2-grey: #7D8392; // medium 
+$dark-grey: #1F2127; // dark-grey
+$shadow-grey: rgba(0, 0, 0, 0.25);
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav {
+    padding: 1rem;
+    box-shadow: 0 4px 8px $shadow-grey;
+}
+
+nav #navbar-title {
+    font-weight: normal;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    #about-box {
+        border: solid 1px $teal;
+        border-radius: 5px;
+        #top-bar {
+            display: flex;
+            justify-content: left;
+            padding: 1rem;
+            gap: 0.3rem;
+            .circle {
+                border-radius: 50%;
+                height: 1.2rem;
+                width: 1.2rem;
+            }
+            #close-btn {
+                background-color: #FF605C;
+            }
+            #min-btn {
+                background-color: #FFBD44;
+            }
+            #open-btn {
+                background-color: #00CA4E;
+            }
+            p {
+                margin-left: 1rem;
+            }
+        }
+        #content {
+            padding: 1.5rem 3rem 3rem 3rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            img {
+                border-radius: 50%;
+                border: solid 15px white;
+                box-shadow: 0 4px 8px $shadow-grey;
+            }
+            #job-title {
+                color: $teal;
+                font-size: 1.2rem;
+                margin-bottom: 0.75rem;
+            }
+            #name {
+                font-family: 'Comfortaa';
+                font-weight: normal;
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+            }
+            #description {
+                color: $medium-2-grey;
+                margin-bottom: 1.25rem;
+            }
+            #cta {
+                color: $dark-grey;
+                margin-bottom: 0.75rem;
+            }
+            #link-bar {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                .github-icon,
+                .linkedin-icon,
+                .email-icon {
+                    color: $teal;
+                    font-size: 3.4rem;
+                }
+                #resume-button {
+                    background-color: $teal;
+                    color: white;
+                    height: 3rem;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 0 1rem;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
